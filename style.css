@@ -37,7 +37,7 @@ h3 {
     font-size: 28px;
     margin-block-start: 0;
     margin-block-end: 0;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
     color: rgba(176, 141, 87, 1);
 }
 
@@ -124,8 +124,161 @@ header nav {
 }
 
 .content_links_section img {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
     border-radius: 25px;
+}
+
+.section_ticket {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    background-color: #681F19;
+}
+
+.section_ticket img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.section_ticket_info {
+    flex: 1;
+    padding: 24px;
+    height: calc(300px - 48px);
+}
+
+.section_ticket_info p {
+    font-size: 18px;
+}
+
+.subsection_ticket_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.subsection_ticket_btn a {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 48px;
+    background-color: #AD8643;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin: 0 24px;
+}
+
+.border {
+    height: 250px;
+    background-color: #C4865F;
+    width: 6px;
+}
+
+.section_slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #AD8643;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 80px 12px;
+}
+
+.section_slogan p {
+    text-align: center;
+}
+
+.section_video {
+    background-image: url('/assets/img/concert_video.png');
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1C0907;
+    height: 350px;
+}
+
+.footer_section_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: #AD8643;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    padding: 12px
+}
+
+.footer_section_socialmedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    width: 50%;
+    gap: 50px;
+    padding: 12px;
+}
+
+.footer_social_icons img {
+    height: 48px;
+    width: 48px;
+    object-fit: contain;
+}
+
+.footer_social_icons {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+input {
+    height: 36px;
+    padding: 6px;
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    flex: 1;
+}
+
+input::placeholder {
+    color: #AD8643;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    padding: 6px;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+button {
+    height: 48px;
+    width: 250px;
+    background-color: #AD8643;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.subscriber_input {
+    display: flex;
+    align-items: center;
 }
