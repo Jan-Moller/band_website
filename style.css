@@ -117,15 +117,18 @@ header nav {
     display: flex;
     justify-content: space-around;
     background-color: #1C0907;
+
 }
 
 .content_links_section a {
     text-decoration: none;
+    width: 30%;
+
 }
 
 .content_links_section img {
-    height: 300px;
-    width: 300px;
+    width: 100%;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 25px;
 }
@@ -137,7 +140,8 @@ header nav {
     align-items: center;
     font-family: 'PT Sans', sans-serif;
     color: white;
-    background-color: #681F19;
+    background-color: #1C0907;
+    ;
 }
 
 .section_ticket img {
@@ -150,10 +154,11 @@ header nav {
     flex: 1;
     padding: 24px;
     height: calc(300px - 48px);
+
 }
 
 .section_ticket_info p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .subsection_ticket_btn {
@@ -281,4 +286,102 @@ button {
 .subscriber_input {
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .section_ticket {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_ticket img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .section_ticket_info {
+        text-align: center;
+    }
+
+    .border {
+        display: none;
+    }
+
+    .subsection_ticket_btn a {
+        width: 250px;
+        margin: 48px 24px;
+    }
+}
+
+
+@media(max-width: 880px) {
+    .hide_mobile {
+        display: none;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 610px) {
+    h1 {
+        font-size: 52px;
+    }
+
+    .header_nav_links img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .header_nav_logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    header nav {
+        left: 40px;
+        right: 40px;
+    }
+
+    .content_links_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 75px;
+    }
+
+    .content_links_section a {
+        width: 75%;
+    }
+
+    .subsection_ticket_btn a {
+        width: 120px;
+        font-size: 20px;
+    
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: auto;
+    }
+
+    .footer_section_info {
+        width: auto;
+    }
+
+    .footer_section_socialmedia {
+        width: auto;
+    }
+
+    .subscriber_input {
+        flex-direction: column;
+        gap: 32px;
+    }
 }
